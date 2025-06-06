@@ -1,0 +1,187 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.list-group-item {
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+.response-card {
+    border-left: 4px solid #0d6efd;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+}
+
+.response-card h6 {
+    color: #0d6efd;
+}
+
+.voice-response-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+.voice-response-link:hover {
+    background-color: #157347;
+    color: #fff;
+}
+
+#responsesModalBody {
+    background-color: #f8f9fa;
+} 
+
+.modal-header {
+    background-color: #f8f9fa;
+}
+/* Add these to your existing styles.css */
+.btn-custom-orange {
+    background-color: #fd7e14;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom-orange:hover {
+    background-color: #e96d0c;
+    color: white;
+}
+
+.section-title {
+    color: #495057;
+    font-weight: 600;
+}
+
+.mentee-list-container {
+    min-height: 300px;
+}
+
+.modal-header-custom {
+    background-color: #fd7e14;
+    color: white;
+}
+
+.btn-close-white {
+    filter: invert(1);
+}
+
+/* Search input styling */
+.input-group-text {
+    background-color: #fd7e14;
+    color: white;
+    border: 1px solid #fd7e14;
+}
+
+#searchInput:focus {
+    border-color: #fd7e14;
+    box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25);
+}
+
+/* Highlight search matches (optional - for future enhancement) */
+.search-highlight {
+    background-color: #fff3cd;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .filter-section .col-md-4,
+    .filter-section .col-md-3,
+    .filter-section .col-md-2,
+    .filter-section .col-md-1 {
+        margin-bottom: 1rem;
+    }
+    
+    #applyFilters {
+        width: 100% !important;
+    }
+}
+
+/* Add these styles to your existing styles.css file */
+
+/* Search input styling */
+.input-group-text {
+    background-color: #fd7e14;
+    color: white;
+    border: 1px solid #fd7e14;
+}
+
+#searchInput {
+    border-left: none;
+}
+
+#searchInput:focus {
+    border-color: #fd7e14;
+    box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25);
+}
+
+#clearSearch {
+    border-left: none;
+}
+
+#clearSearch:hover {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+/* Alert styling for search results */
+.alert-info {
+    background-color: #e7f3ff;
+    border-color: #b3d9ff;
+    color: #084298;
+}
+
+.alert-info .btn-outline-info {
+    color: #084298;
+    border-color: #084298;
+}
+
+.alert-info .btn-outline-info:hover {
+    background-color: #084298;
+    color: white;
+}
+
+/* Loading states */
+.bi-hourglass-split {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive design for filter section */
+@media (max-width: 768px) {
+    .filter-section .row > div {
+        margin-bottom: 1rem;
+    }
+    
+    #applyFilters {
+        width: 100% !important;
+    }
+    
+    .filter-section small {
+        font-size: 0.75rem;
+    }
+}
