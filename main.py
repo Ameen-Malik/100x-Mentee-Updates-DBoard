@@ -119,6 +119,8 @@ async def get_mentees(
             mentees_with_counts.sort(key=lambda x: x["name"].lower(), reverse=reverse)
         elif sort_by == "house_role":
             mentees_with_counts.sort(key=lambda x: (x["house_role"] or "").lower(), reverse=reverse)
+        elif sort_by == "response_count":
+            mentees_with_counts.sort(key=lambda x: x["response_count"], reverse=reverse)
         
         return mentees_with_counts
     
